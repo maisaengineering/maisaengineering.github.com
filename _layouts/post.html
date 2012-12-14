@@ -1,0 +1,13 @@
+---
+layout: default
+blog: true
+---
+
+<p>
+	{{ page.date | date: "%b %Y" }}
+  {% if page.updated_at %}
+      revised {{ page.updated_at }}
+  {% endif %}
+</p>
+
+{{ content }}
