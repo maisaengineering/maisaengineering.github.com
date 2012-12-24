@@ -65,6 +65,55 @@ a:focus {
   color: #A8001A;
 }
 
+.blog_container{
+  width:700px;
+  border:1px solid #A8001A;
+  border-radius:3px;
+  margin-bottom:20px;
+}
+
+.read_more{
+  background:#A8001A;
+  border-radius:3px;
+  width:90px;
+  color:#fff;
+  font-weight:bold;
+  padding:5px;
+  margin-left:20px;
+  margin-bottom: 10px;
+}
+
+.ft_aboutus{
+  padding-left:10px;
+  color:#888;
+  width:600px;
+}
+
+.ft_abt_head{
+  color:#fff;
+  font-weight:bold;
+  font-size:18px;
+}
+
+.ft_contact_head{
+  color:#fff;
+  font-weight:bold;
+  font-size:18px;
+}
+.address_box{
+  padding-left:100px;
+  color:#888;
+}
+
+.address_box a{
+  color:#fff;
+}
+
+.address_box a:hover{
+  color:#A8001A;
+  text-shadow:none;
+}
+
 
 
 /*******************************************************************************
@@ -250,7 +299,7 @@ hr {
   background: url('../images/bg_hr.png') repeat-x center;
 }
 
-table {
+/*table {
   border: 1px solid #373737;
   margin-bottom: 20px;
   text-align: left;
@@ -266,7 +315,7 @@ th {
 td {
   padding: 10px;
   border: 1px solid #373737;
- }
+ }*/
 
 form {
   background: #f2f2f2;
@@ -288,7 +337,7 @@ Full-Width Styles
 
 .inner {
   position: relative;
-  max-width: 850px;
+  max-width: 960px;
   padding: 4px 10px;
   margin: 0 auto;
 }
@@ -382,10 +431,11 @@ Full-Width Styles
 }
 
 #footer_wrap {
-  background: #F5F4EF;
+  background: url(../images/bg_footer.png) repeat;
+  height: 200px;
 }
 
-
+#888
 
 /*******************************************************************************
 Small Device Styles

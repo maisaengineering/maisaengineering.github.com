@@ -5,10 +5,14 @@ title: Maisa blog
 
 <ul id="posts" class="twelve columns offset-by-four">
   {% for post in site.posts %}
-    <li>
-      <a class="post_title" href="{{ post.url }}">{{ post.title }}</a>
-      <span class="post_date">{{ post.date | date: "%b %Y" }}</span>
-    </li>
+  	<div class="blog_container">
+	    <li>
+	      <a class="post_title" href="{{ post.url }}">{{ post.title }}</a><br/>
+	      <span>{{ post.date | date: "%d %B %Y" }}</span>
+	      <p>{{ post.content | prettyprint | truncate: 400  }}</p>
+	    </li>
+	    <a href="{{ post.url }}"><div class="read_more">Read More...</div></a>
+    </div>
   {% endfor %}
 </ul>
 
