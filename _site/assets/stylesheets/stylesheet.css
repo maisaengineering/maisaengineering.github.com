@@ -490,3 +490,16 @@ Small Device Styles
   }
 
 }
+
+
+/* css */
+
+.porting_from{
+  margin-left:37%;
+  background:orange;
+  width:380px;
+  font-weight:bold;
+  padding-left:5px;
+}
+
+
