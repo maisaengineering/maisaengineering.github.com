@@ -25,10 +25,17 @@ blog: true
 				<span class="who_we_are_title">Who We Are</span>
 				<div>
 					Maisa™ Solutions is a web development shop based in India, 
-we build awesome things for the web. We’re creators, designers, engineers, educators, and problem solvers. We are Ruby on Rails specialists, and we love it.
-					
+we build awesome things for the web. We’re creators, designers, engineers, educators, and problem solvers. We are Ruby on Rails specialists, and we love it.	
+
 					<!-- Maisa Solutions™ is an emerging leader in Web Development, Software Development and outsourcing of highly-skilled programmers and developers. We are made up of a team of innovative professionals who's main goal is to provide excellent service and deliver products that exceeds all client expectations. -->
-				</div>
+				</div><br/>
+	
+				<section>
+					<span class="recent_posts_title">Recent posts</span><br/>
+					{% for post in site.posts %}
+						<a class="recent_post_links" href="{{ post.url }}">{{ post.title }}</a><br/>
+					{% endfor %}
+				</section>
 			</section>
 		</ul>
 	</td>

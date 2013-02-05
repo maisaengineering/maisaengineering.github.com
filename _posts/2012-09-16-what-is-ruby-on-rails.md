@@ -2,7 +2,7 @@
 layout: post
 title: What is Ruby on Rails?
 category: Ruby on Rails
-author: Maisa
+author: MaisaSolutions
 ---
 
 

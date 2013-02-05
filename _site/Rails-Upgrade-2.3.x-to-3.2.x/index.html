@@ -63,21 +63,61 @@
 		<ul id="posts" class="twelve columns offset-by-four">
 			<div class=" blog_container">
 			  	<header class="ten columns" id="article-header">
-				    <h3>What is Ruby on Rails?</h3>
+				    <h3>Rails upgrade 2.3.x to 3.2.x</h3>
 				</header>
-					<span class="posted_date">Posted on September 16, 2012 by <span class="post_author_name">MaisaSolutions</span></span>
+					<span class="posted_date">Posted on January 20, 2013 by <span class="post_author_name">MaisaSolutions</span></span>
 				  
 
-				<p><span class="side_heading_color">What is Ruby :</span></p>
+				<p>Install Rails Upgrade plugin </p>
 
-<p>Ruby is a pure object-oriented programming language with a super clean syntax that makes programming elegant and fun. Ruby successfully combines Smalltalkâs conceptual elegance, Pythons ease of use and learning, and Perls pragmatism. Ruby originated in Japan in the early 1990s, and has started to become popular worldwide in the past few years as more English language books and documentation have become available.</p>
+<div class="highlight"><pre><code class="bash"><span class="nv">$ </span>ruby script/plugin install git://github.com/rails/rails_upgrade.git
+</code></pre>
+</div>
 
-<p><span class="side_heading_color">What is Rails:</span></p>
+<p>Then check for files list which we need to change</p>
 
-<p>Rails is an open source Ruby framework for developing database-backed web applications.
-What’s special about that? There are dozens of frameworks out there and most of them have been around much longer than Rails. Why should you care about yet another framework? What would you think if I told you that you could develop a web application at least ten times faster with Rails than you could with a typical Java framework? You can without making any sacrifices in the quality of your application! How is this possible? Part of the answer is in the Ruby programming language. Many things that are very simple to do in Ruby are not even possible in most other languages. Rails takes full advantage of this.</p>
+<div class="highlight"><pre><code class="bash"><span class="nv">$ </span>rake rails:upgrade:check
+</code></pre>
+</div>
 
-<p>The rest of the answer is in two of Rails guiding principles: less software and convention over configuration. Less software means you write fewer lines of code to implement your application. Keeping your code small means faster development and fewer bugs, which makes your code easier to understand, maintain, and enhance. Very shortly, you will see how Rails cuts your code burden. Convention over configuration means an end to verbose XML configuration files there aren’t any in Rails! Instead of configuration files, a Rails application uses a few simple programming conventions that allow it to figure out everything through reflection and discovery. Your application code and your running database already contain everything that Rails needs to know!</p>
+<p>This should give you an idea of the manual changes that need to be done, but you’ll probably want to upgrade some of those automatically.  The fastest way to do this is to run “rails .” , which will simply generate a new app on top of your existing code.  But this generation also has the effect of replacing some existing files, some of which you might not want to replace.  </p>
+
+<p><span class="side_heading_color">Backup files</span></p>
+
+<div class="highlight"><pre><code class="bash"><span class="nv">$ </span>rake rails:upgrade:backup
+</code></pre>
+</div>
+
+<p>That will backup files you’ve probably edited that will be replaced in the upgrade; if you finish the upgrade and find that you don’t need the old copies, just delete them.  Otherwise, copy their contents back into the new files or run one of the following upgraders…</p>
+
+<p><span class="side_heading_color">Routes upgrade</span></p>
+
+<p>To generate a new routes file from your existing routes file, simply run the following Rake task:</p>
+
+<div class="highlight"><pre><code class="bash"><span class="nv">$ </span>rake rails:upgrade:routes
+</code></pre>
+</div>
+
+<p>This will output a new routes file that you can copy and paste or pipe into a new, Rails 3 compatible config/routes.rb.</p>
+
+<p><span class="side_heading_color">Gemfile generator</span> </p>
+
+<p>Creating a new Gemfile is as simple as running:</p>
+
+<div class="highlight"><pre><code class="bash"><span class="nv">$ </span>rake rails:upgrade:gems
+</code></pre>
+</div>
+
+<p>This task will extract your config.gem calls and generate code you can put into a bundler compatible Gemfile.</p>
+
+<p><span class="side_heading_color">Configuration generator</span></p>
+
+<div class="highlight"><pre><code class="bash"><span class="nv">$ </span>rake rails:upgrade:configuration</code></pre>
+</div>
+
+<p>Much of the configuration information that lived in environment.rb now belongs in a new file named config/application.rb; use the following task to generate code you can put into config/application.rb from your existing config/environment.rb</p>
+
+<h3 class="gray">Comments</h3>
 
 <div>
 <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
@@ -87,8 +127,8 @@ What’s special about that? There are dozens of frameworks out there and most
 <script type="text/javascript">
 	var disqus_shortname = 'maisa';
 	// var disqus_developer = 1;
-	var disqus_identifier = 'http://maisaengineering.github.com/What-is-ruby-on-rails';
-	var disqus_url = 'http://maisaengineering.github.com/What-is-ruby-on-rails';
+	var disqus_identifier = 'http://maisaengineering.github.com/Rails-Upgrade-2.3.x-to-3.2.x/';
+	var disqus_url = 'http://maisaengineering.github.com/Rails-Upgrade-2.3.x-to-3.2.x/';
 	var disqus_script = 'embed.js';
 	(function () {
 	var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
