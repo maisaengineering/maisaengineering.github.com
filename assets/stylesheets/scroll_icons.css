@@ -1,0 +1,208 @@
+.wrapper2 {
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+margin: auto;
+position: relative;
+
+}
+.icons-sprite, .post .meta .author:before, .post .meta .date:before, .post .meta .tags:before, .post .meta .comments:before, .sidebar #twitter-tools ul li:not(.aktt_more_updates)::before, #devs-welcome-button:before, #ops-welcome-button:before, #contact-us-floating > li.facebook > div, #contact-us-floating > li.twitter > div, #contact-us-floating > li.email > div, #contact-us-floating > li.phone > div, #roi-calculator #roiResults h3:before, #roi-calculator #roiParams h3:before, .menu-icon-buy a:before, .menu-icon-buy a:hover:before, .menu-icon-buy.current-menu-item a:before, .menu-icon-buy.current-menu-item a:hover:before, .menu-icon-calculator a:before, .menu-icon-calculator a:hover:before, .menu-icon-calculator.current-menu-item a:before, .menu-icon-calculator.current-menu-item a:hover:before, .menu-icon-clients a:before, .menu-icon-clients a:hover:before, .menu-icon-clients.current-menu-item a:before, .menu-icon-clients.current-menu-item a:hover:before, .menu-icon-documentation a:before, .menu-icon-documentation a:hover:before, .menu-icon-documentation.current-menu-item a:before, .menu-icon-documentation.current-menu-item a:hover:before, .menu-icon-download a:before, .menu-icon-download a:hover:before, .menu-icon-download.current-menu-item a:before, .menu-icon-download.current-menu-item a:hover:before, .menu-icon-features a:before, .menu-icon-features a:hover:before, .menu-icon-features.current-menu-item a:before, .menu-icon-features.current-menu-item a:hover:before, .menu-icon-overview a:before, .menu-icon-overview a:hover:before, .menu-icon-overview.current-menu-item a:before, .menu-icon-overview.current-menu-item a:hover:before, .menu-icon-screenshot a:before, .menu-icon-screenshot a:hover:before, .menu-icon-screenshot.current-menu-item a:before, .menu-icon-screenshot.current-menu-item a:hover:before, .menu-icon-support a:before, .menu-icon-support a:hover:before, .menu-icon-support.current-menu-item a:before, .menu-icon-support.current-menu-item a:hover:before, .menu-icon-remoting a:before, .menu-icon-remoting a:hover:before, .menu-icon-remoting.current-menu-item a:before, .menu-icon-remoting.current-menu-item a:hover:before, .menu-icon-reports a:before, .menu-icon-reports a:hover:before, .menu-icon-reports.current-menu-item a:before, .menu-icon-reports.current-menu-item a:hover:before, .menu-icon-reports-ops a:before, .menu-icon-reports-ops a:hover:before, .menu-icon-reports-ops.current-menu-item a:before, .menu-icon-reports-ops.current-menu-item a:hover:before, .menu-icon-reports-devs a:before, .menu-icon-reports-devs a:hover:before, .menu-icon-reports-devs.current-menu-item a:before, .menu-icon-reports-devs.current-menu-item a:hover:before, .menu-icon-resources a:before, .menu-icon-resources a:hover:before, .menu-icon-resources.current-menu-item a:before, .menu-icon-resources.current-menu-item a:hover:before, .icon-wand:before, .icon-eco:before, .icon-localremote:before, .icon-zero:before, .icon-reload-gold:before, .icon-fire-gold:before, .icon-eco-gold:before, .icon-lightbulb-gold:before, .icon-zero-gold:before, .icon-clock-gold:before, .icon-gears-gold:before, .icon-pen-gold:before, .icon-speed-gold:before, .icon-update-gold:before, .icon-manual:before, .icon-resources:before, .icon-faq:before, .icon-download:before, .icon-download:hover:before, .icon-download.green:hover:before, .icon-download.gold:hover:before, .icon-creditcard:before, .selected .icon-creditcard:before, .icon-banktrans:before, .selected .icon-banktrans:before, .company-icon-dream:before, .company-icon-mission:before, .company-icon-foundation:before, .company-icon-enablers:before {
+  background: url('../images/icons-sd6245f076f.png') no-repeat;
+}
+#contact-us-floating {
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
+  -webkit-transition-delay: 250ms;
+  -moz-transition-delay: 250ms;
+  -o-transition-delay: 250ms;
+  transition-delay: 250ms;
+  margin: 0 !important;
+  padding: 0 !important;
+  list-style: none !important;
+  margin-top: 45px !important;
+  position: absolute;
+  left: -30px;
+  top: 0;
+  text-align: left;
+  z-index: 50;
+}
+#contact-us-floating > li {
+  margin: 0 !important;
+  padding: 0 !important;
+  list-style: none !important;
+}
+@media all and (min-width: 1080px) {
+  #contact-us-floating {
+    left: -80px;
+  }
+}
+#contact-us-floating > li {
+  margin-bottom: 10px !important;
+  position: relative;
+  display: block;
+  height: 38px;
+  width: 38px;
+}
+#contact-us-floating > li:before {
+  content: '';
+  display: block;
+  height: 33px;
+  width: 33px;
+  border-radius: 50%;
+  margin: 1px;
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  z-index: 10;
+}
+#contact-us-floating > li.facebook:hover:before {
+  -webkit-box-shadow: 0 1px 20px #275ab0;
+  -moz-box-shadow: 0 1px 20px #275ab0;
+  box-shadow: 0 1px 20px #275ab0;
+}
+#contact-us-floating > li.facebook > div {
+  background-position: 0 -473px;
+}
+#contact-us-floating > li.twitter:hover:before {
+  -webkit-box-shadow: 0 1px 20px #31b8d8;
+  -moz-box-shadow: 0 1px 20px #31b8d8;
+  box-shadow: 0 1px 20px #31b8d8;
+}
+#contact-us-floating > li.twitter > div {
+  background-position: 0 -377px;
+}
+#contact-us-floating > li.email:hover:before {
+  -webkit-box-shadow: 0 1px 20px #e5b52f;
+  -moz-box-shadow: 0 1px 20px #e5b52f;
+  box-shadow: 0 1px 20px #e5b52f;
+}
+#contact-us-floating > li.email > div {
+  background-position: 0 -322px;
+  height: 38px;
+  width: 38px;
+}
+#contact-us-floating > li.phone:hover:before {
+  -webkit-box-shadow: 0 1px 20px #94be36;
+  -moz-box-shadow: 0 1px 20px #94be36;
+  box-shadow: 0 1px 20px #94be36;
+}
+#contact-us-floating > li.phone > div {
+  background-position: 0 -425px;
+}
+#contact-us-floating > li > a {
+  display: block;
+  z-index: 60;
+  position: relative;
+  height: 38px;
+  width: 38px;
+}
+#contact-us-floating > li .box {
+  white-space: nowrap;
+}
+#contact-us-floating > li.facebook > div:hover, #contact-us-floating > li.twitter > div:hover {
+  width: 200px;
+}
+#contact-us-floating > li.facebook .box, #contact-us-floating > li.twitter .box {
+  top: 7px;
+}
+#contact-us-floating > li.facebook .box:before, #contact-us-floating > li.twitter .box:before {
+  top: 4px;
+}
+#contact-us-floating > li.email > div {
+  top: -7px;
+  height: 55px;
+}
+#contact-us-floating > li.email > div:hover {
+  width: 252px;
+}
+#contact-us-floating > li.email .box {
+  top: 1px;
+}
+#contact-us-floating > li.email .box:before {
+  top: 19px;
+}
+#contact-us-floating > li.phone > div {
+  height: 40px;
+}
+#contact-us-floating > li.phone > div:hover {
+  width: 252px;
+}
+#contact-us-floating > li.phone .box {
+  top: 1px;
+}
+#contact-us-floating > li.phone .box:before {
+  top: 12px;
+}
+#contact-us-floating > li > div {
+  position: absolute;
+  top: 0px;
+  left: 0;
+  height: 38px;
+  width: 38px;
+  overflow: hidden;
+  z-index: 50;
+  -webkit-transition-property: width, height;
+  -moz-transition-property: width, height;
+  -o-transition-property: width, height;
+  transition-property: width, height;
+  -webkit-transition-duration: 0.3s, 0.3s;
+  -moz-transition-duration: 0.3s, 0.3s;
+  -o-transition-duration: 0.3s, 0.3s;
+  transition-duration: 0.3s, 0.3s;
+}
+#contact-us-floating > li > div:hover {
+  padding-right: 2px;
+}
+#contact-us-floating > li > div > .box {
+  margin-left: 50px;
+  position: relative;
+  display: inline-block;
+  background: rgba(236, 235, 235, 0.9);
+  -webkit-box-shadow: 1px 0 1px #ecebeb;
+  -moz-box-shadow: 1px 0 1px #ecebeb;
+  box-shadow: 1px 0 1px #ecebeb;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+}
+#contact-us-floating > li > div > .box, #contact-us-floating > li > div > .box a {
+  color: #454545;
+  text-decoration: none;
+  font-size: 11px;
+  padding: 4px;
+}
+#contact-us-floating > li > div > .box a:hover {
+  text-decoration: underline;
+}
+#contact-us-floating > li > div .box:before {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=90);
+  opacity: 0.9;
+  background-position: 0 -1696px;
+  height: 14px;
+  width: 7px;
+  position: absolute;
+  content: '';
+  display: block;
+}
+#contact-us-floating > li > div.right-side, #contact-us-floating > li > div.right-side a {
+  font-weight: 600;
+}
+#contact-us-floating > li > div.right-side .box:before {
+  left: -7px;
+}
+#contact-us-floating > li > div.bottom-side .box {
+  -webkit-box-shadow: 0 1px 1px #ecebeb;
+  -moz-box-shadow: 0 1px 1px #ecebeb;
+  box-shadow: 0 1px 1px #ecebeb;
+}
+#contact-us-floating > li > div.bottom-side .box:before {
+  left: 10px;
+  top: -7px;
+  background-position: 0 -1750px;
+  height: 7px;
+  width: 14px;
+}

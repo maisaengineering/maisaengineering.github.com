@@ -3,15 +3,33 @@ layout: default
 blog: true
 ---
 
-<header class="ten columns" id="article-header">
-    <h1>{{ page.title }}</h1>
- </header>
+<table>
+	<td>
+		<ul id="posts" class="twelve columns offset-by-four">
+			<div class=" blog_container">
+			  	<header class="ten columns" id="article-header">
+				    <h3>{{ page.title }}</h3>
+				</header>
+					<span class="posted_date">Posted on {{ page.date | date: "%B %d, %Y" }} by <span class="post_author_name">{{ page.author }}</span></span>
+				  {% if page.updated_at %}
+				      Post updated on {{ page.updated_at }} by <span class="post_author_name">{{ page.author }}</span></span>
+				  {% endif %}
 
-<p>
-	{{ page.date | date: "%b %Y" }}
-  {% if page.updated_at %}
-      revised {{ page.updated_at }}
-  {% endif %}
-</p>
-
-{{ content }}
+				{{ content }}
+			</div>
+		</ul>
+	</td>
+	<td>
+		<ul>
+			<section class="categories_blog">
+				<span class="who_we_are_title">Who We Are</span>
+				<div>
+					Maisa™ Solutions is a web development shop based in India, 
+we build awesome things for the web. We’re creators, designers, engineers, educators, and problem solvers. We are Ruby on Rails specialists, and we love it.
+					
+					<!-- Maisa Solutions™ is an emerging leader in Web Development, Software Development and outsourcing of highly-skilled programmers and developers. We are made up of a team of innovative professionals who's main goal is to provide excellent service and deliver products that exceeds all client expectations. -->
+				</div>
+			</section>
+		</ul>
+	</td>
+</table>

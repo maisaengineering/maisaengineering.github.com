@@ -1,14 +1,16 @@
 ---
 layout: post
 title: What is Ruby on Rails?
+category: Ruby on Rails
+author: Maisa
 ---
 
 
-<span class="default_color">What is Ruby :</span>
+<span class="side_heading_color">What is Ruby :</span>
 
 Ruby is a pure object-oriented programming language with a super clean syntax that makes programming elegant and fun. Ruby successfully combines Smalltalkâs conceptual elegance, Pythons ease of use and learning, and Perls pragmatism. Ruby originated in Japan in the early 1990s, and has started to become popular worldwide in the past few years as more English language books and documentation have become available.
 
-<span class="default_color">What is Rails:</span>
+<span class="side_heading_color">What is Rails:</span>
 
 Rails is an open source Ruby framework for developing database-backed web applications.
 What’s special about that? There are dozens of frameworks out there and most of them have been around much longer than Rails. Why should you care about yet another framework? What would you think if I told you that you could develop a web application at least ten times faster with Rails than you could with a typical Java framework? You can without making any sacrifices in the quality of your application! How is this possible? Part of the answer is in the Ruby programming language. Many things that are very simple to do in Ruby are not even possible in most other languages. Rails takes full advantage of this.

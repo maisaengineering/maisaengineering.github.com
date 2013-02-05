@@ -3,17 +3,41 @@ layout: default
 title: Maisa blog
 ---
 
-<ul id="posts" class="twelve columns offset-by-four">
-  {% for post in site.posts %}
-  	<div class="blog_container">
-	    <li>
-	      <a class="post_title" href="{{ post.url }}">{{ post.title }}</a><br/>
-	      <span>{{ post.date | date: "%d %B %Y" }}</span>
-	      <p>{{ post.content | prettyprint | truncate: 400  }}</p>
-	    </li>
-	    <a href="{{ post.url }}"><div class="read_more">Read More...</div></a>
-    </div>
-  {% endfor %}
-</ul>
+<table>
+	<td>
+		<ul id="posts" class="none">
+		  {% for post in site.posts %}
+		  	<div class="blog_container">
+			    <li>
+			      <a class="post_title" href="{{ post.url }}">{{ post.title }}</a><br/>
+			      <span class="posted_date">Posted on {{ post.date | date: "%B %d, %Y" }} by <span class="post_author_name">{{ post.author }}</span></span>
+			      <p>{{ post.content | prettyprint | truncate: 400  }}</p>
+			    </li>
+			    <a href="{{ post.url }}"><div class="read_more">Read More...</div></a>
+		    </div>
+		  {% endfor %}
+		</ul>
+	</td>
+	<td>
+		<ul>
+			<section class="categories_blog">
+				<span class="who_we_are_title">Who We Are</span>
+				<div>
+					Maisa™ Solutions is a web development shop based in India, 
+we build awesome things for the web. We’re creators, designers, engineers, educators, and problem solvers. We are Ruby on Rails specialists, and we love it.	
+
+					<!-- Maisa Solutions™ is an emerging leader in Web Development, Software Development and outsourcing of highly-skilled programmers and developers. We are made up of a team of innovative professionals who's main goal is to provide excellent service and deliver products that exceeds all client expectations. -->
+				</div><br/>
+	
+				<section>
+					<span class="recent_posts_title">Recent posts</span><br/>
+					{% for post in site.posts %}
+						<a class="recent_post_links" href="{{ post.url }}">{{ post.title }}</a><br/>
+					{% endfor %}
+				</section>
+			</section>
+		</ul>
+	</td>
+</table>
 
 
